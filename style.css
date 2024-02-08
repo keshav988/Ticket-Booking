@@ -27,4 +27,28 @@ nav{
     cursor: pointer;
 }
 
+/* for larger screens */
+@media only screen and  (min-width: 600px) {
+
+    nav{
+        padding: 0px 20px;
+        height: 8vh;
+    }
+
+    #heading{
+        margin-right: 75vw;
+    }
+
+    #heading h1{
+        font-size: 24px;
+    }
+
+    .nav-icons{
+        font-size: 20px;
+    }
+
+}
+
+
+
 /* nav ends */
