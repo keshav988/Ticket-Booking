@@ -52,7 +52,8 @@ function searchForTrain() {
         }
         else{
             if(journeyClass.value !== ""){
-                alert(`Boarding at: ${fromStation.value}\nDestination: ${toStation.value}\nJourney Date: ${journeyDate.value}\nClass type: ${journeyClass.value}`);
+                // alert(`Boarding at: ${fromStation.value}\nDestination: ${toStation.value}\nJourney Date: ${journeyDate.value}\nClass type: ${journeyClass.value}`);
+                window.location.href = 'train.html';
             }
         }
     }
