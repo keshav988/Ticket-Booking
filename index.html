@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,16 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- font awasome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
+
 <body>
-    
+
+    <!-- nav start -->
     <nav>
 
         <div class="nav-div">
@@ -30,10 +35,53 @@
         <div class="nav-div">
             <i class="fa-solid fa-user nav-icons"></i>
         </div>
-        
+
     </nav>
+    <!-- nav ends -->
+
+
+    <!-- main start -->
+    <main>
+        <div class="container">
+
+            <div id="from-div" class="form-div">
+                <i class="fa-solid fa-paper-plane"></i>
+                <input type="text" id="from" placeholder="From">
+            </div>
+
+            <div id="to-div" class="form-div">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" id="to" placeholder="To">
+            </div>
+
+            <div id="journey-date-div" class="form-div">
+                <i class="fa-solid fa-calendar-days"></i>
+                <input type="date" id="journey-date">
+            </div>
+
+            <div id="dropdown-class" class="form-div">
+                <p>Select Class</p>
+                <select id="journey-class">
+                    <option value="firstclass">First Class</option>
+                    <option value="second class">Second Class</option>
+                    <option value="sleeper">Sleeper</option>
+                    <option value="secondSitting">Second Sitting</option>
+                </select>
+            </div>
+
+            <div id="btn-div">
+                <button id="search-btn">Search</button>
+            </div>
+
+
+        </div>
+
+    </main>
+    <!-- main ends -->
+
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
