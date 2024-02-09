@@ -7,7 +7,7 @@ const button = document.querySelector('#search-btn');
 
 
 // by default travel date is today
-travellDate = new Date().toLocaleDateString();
+let travelDate = new Date().toLocaleDateString();
 
 
 journeyDate.addEventListener('change', () => {
@@ -15,7 +15,7 @@ journeyDate.addEventListener('change', () => {
     let newDate = new Date(inputDate);
     console.log(newDate.toLocaleDateString());
 
-    travellDate = newDate.toLocaleDateString();
+    travelDate = newDate.toLocaleDateString();
 })
 
 
@@ -27,8 +27,15 @@ button.addEventListener('click', () => {
 function searchForTrain() {
     if (fromStation.value !== "" || toStation.value !== "") {
             if(journeyClass.value !== ""){
-                alert(`Boarding at: ${fromStation.value}\nDestination: ${toStation.value}\nJourney Date: ${travellDate}\nClass type: ${journeyClass.value}`);
+                // alert(`Boarding at: ${fromStation.value}\nDestination: ${toStation.value}\nJourney Date: ${travelDate}\nClass type: ${journeyClass.value}`);
+
+                localStorage.setItem('fromStation', fromStation.value);
+                localStorage.setItem('toStation', toStation.value);
+                localStorage.setItem('travelDate', travelDate);
+                localStorage.setItem('journeyClass', journeyClass.value);
+
                 window.location.href = 'train.html';
+
             }
     }
 }
