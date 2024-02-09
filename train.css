@@ -64,6 +64,7 @@ main{
     background-color: #d3e3fd;
     border-radius: 6px;
     margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .train-details{
@@ -94,8 +95,6 @@ main{
     display: flex;
     align-items: center;
     column-gap: 10px;
-    /* background-color: red; */
-    /* justify-content: space-between; */
 }
 
 .train-class{
@@ -149,6 +148,7 @@ main{
 /* for larger screens */
 @media only screen and (min-width: 600px) {
 
+    /* header start */
     #backarrow-div{
         padding-left: 10px;
     }
@@ -163,5 +163,31 @@ main{
         background-color: #f6f8fc;
         border-radius: 6px;
     }
+    /* header ends */
+
+    /* main start */
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2vw;
+    }
+
+    .train{
+        width: 45vw;
+    }
+
+    .train-class{
+        width: 10vw;
+    }
+
+    .price-div{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        column-gap: 6px;
+    }
+
+    /* main ends */
+
 
 }
