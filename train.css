@@ -50,6 +50,10 @@ header{
 
 }
 
+.hidden{
+    display: none;
+}
+
 /* header end */
 
 /* main start */
@@ -155,7 +159,7 @@ main{
 
     header{
         column-gap: 5vw;
-        padding: 10px 10px 10px;
+        padding: 10px 10px 14px;
     }
 
     #first-summery{
@@ -163,7 +167,34 @@ main{
         background-color: #f6f8fc;
         border-radius: 6px;
     }
+
+
+    #search-div{
+        background-color: #eeeeee;
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        column-gap: 10px;
+        padding-left: 20px;
+        border: 1px solid #0000;
+        border-radius: 24px;
+        color: #757779;
+    }
+
+    #search-div input{
+        font-size: 15px;
+        height: 60%;
+        width: 80%;
+        border: none;
+        outline: none;
+        padding-left: 5px;
+        background-color: transparent;
+    }
+
     /* header ends */
+
+
 
     /* main start */
     .container{
