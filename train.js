@@ -5,6 +5,7 @@ const toStation = document.querySelector('#to');
 const journeyDate = document.querySelector('#journey-date');
 const journeyClass = document.querySelector('#journey-class');
 const searchDiv = document.querySelector('#search-div');
+const otherHeader = document.querySelector('#other-header');
 
 
 backArrow.addEventListener('click', () => {
@@ -20,8 +21,10 @@ journeyClass.innerText = localStorage.getItem('journeyClass');
 
 if(screen.width < 600){
     searchDiv.classList.add('hidden');
+    otherHeader.classList.add('hidden');
 }
 else{
     searchDiv.classList.remove('hidden');
+    otherHeader.classList.remove('hidden');
 }
 
